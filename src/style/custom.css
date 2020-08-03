@@ -1,0 +1,24 @@
+.todo-list.active{
+    margin-left: -50px;
+}
+
+.addlist-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+.todo-icon{
+    width: 50px;
+}
+
+.input-modal{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 90vh;
+    border-radius: 16px 16px 0 0;
+}
+.button-close-modal{
+    width: 100px;
+    height: 8px;
+}
