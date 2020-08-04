@@ -15,8 +15,13 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 90vh;
+    height: 0vh;
     border-radius: 16px 16px 0 0;
+    display: none;
+}
+.input-modal.active{
+    height: 92vh;
+    display: flex;
 }
 .button-close-modal{
     width: 100px;
