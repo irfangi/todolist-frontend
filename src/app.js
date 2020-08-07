@@ -1,3 +1,4 @@
+import "regenerator-runtime";
 import "./style/main.css"
 import "./style/custom.css"
 import "./style/fontello.css"

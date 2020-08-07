@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-server": "npm install && json-server --watch server/db.json",
+    "start-server": "json-server --watch server/db.json",
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack-dev-server --config webpack.dev.js",
-    "css:build": "tailwind build src/style/style.css -o src/style/main.css"
+    "css:build": "tailwind build src/style/style.css -o src/style/main.css",
+    "start-dev-test": "concurrently --kill-others \"npm run start-dev\" \"npm run start-server\""
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
     "babel-loader": "^8.1.0",
+    "concurrently": "^5.2.0",
     "css-loader": "^4.0.0",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
@@ -29,5 +31,7 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.0.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  }
 }
